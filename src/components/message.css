@@ -1,0 +1,22 @@
+.message-container{
+  max-width: 55%;
+  margin: 5px 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.message-bot{
+  background-color: #08678850;
+  border: solid 1px #086788;
+  align-self: flex-start;
+}
+
+.message-person {
+  background-color: #36c9c650;
+  border: solid 1px #36c9c6;
+  align-self: flex-end;
+}
+
+.meassage{
+  font-size: 16px;
+}

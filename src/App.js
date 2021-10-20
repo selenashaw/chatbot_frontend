@@ -1,10 +1,9 @@
 import './App.css';
+import Mainpage from './components/mainpage';
 
 function App() {
   return (
-    <div className="App">
-      This is going to be a chatbot wowie!
-    </div>
+    <Mainpage />
   );
 }
 
