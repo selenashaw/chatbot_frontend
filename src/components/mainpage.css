@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .background {
   /* background-color: #467599; */
   /* background-color: #086788; */
@@ -26,13 +28,14 @@
 
 .message-header-content{
   font-size: 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .messages{
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  height: calc(100% - 75px);
+  height: calc(100% - 175px);
 }
 
 /* From w3schools, to hide scrollbar but keep functionality */
@@ -45,4 +48,20 @@
 .messages {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.textfield {
+  height: 100px;
+  width: 100%;
+}
+
+.text-box {
+  border-radius: 5px 5px 0px 0px;
+  border: solid 1.5px #36c9c6;
+  border-bottom: 0px;
+  padding: 10px;
+  height: calc(100% - 21.5px);
+  width: calc(100% - 23px);
+  resize:none;
+  font-family: 'Roboto', sans-serif;
 }

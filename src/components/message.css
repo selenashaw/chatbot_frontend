@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .message-container{
   max-width: 55%;
   margin: 5px 10px;
@@ -11,12 +13,34 @@
   align-self: flex-start;
 }
 
-.message-person {
+.message-person{
   background-color: #36c9c650;
   border: solid 1px #36c9c6;
   align-self: flex-end;
 }
 
-.meassage{
-  font-size: 16px;
+.message{
+  font-size: 14px;
+  font-family:'Roboto', sans-serif;
+}
+
+.button-container{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.button{
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px #086788;
+  cursor: pointer;
+  font-size: 14px;
+  font-family:'Roboto', sans-serif;
+}
+
+.button:hover{
+  background-color: #08688865;
 }

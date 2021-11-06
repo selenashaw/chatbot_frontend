@@ -1,3 +1,52 @@
 {
+  "intro": "Hello! I am the Lab TA Chatbot, I am here to help you with understanding the TigerFile tests for your course! You will be able to ask me about multiple TigerFile tests, once you are done, I would greatly appreciate it if you stuck around and answered my survey questions!",
+  "which_class": {
+    "text": "To get started, which class are you in?",
+    "buttons": [["Cos126", 0], ["Cos226", 1]]
+  },
+  "which_assignment": {
+    "a": "Great, you are in ",
+    "b": "! Which assignment are you working on?"
+  },
+  "which_part": {
+    "a": "Alright, you are working on ",
+    "b": ". Looks like there are multiple parts to that assignment, which part would you like to look at?"
+  },
+  "which_test": {
+    "a": "Awesome, you are working on ",
+    "b": ", which TigerFile Test do you want to know more about?"
+  },
+  "test_hint": {
+    "a": "Okay, you are asking about test ",
+    "b": "This is what is written in the TigerFile test: ",
+    "c": "Here is some more information about this test: "
+  },
+  "loop": {
+    "text": "Can I help you with anything else?",
+    "buttons_test": [["Yes - different test number", 0], ["No - this will start the survey", 1]],
+    "buttons_part": [["Yes - different test number, same assignment part", 0], ["Yes - a different assignment part", 1], ["No - this will start the survey", 2]]
+  },
+  "loop_which_test": {
+    "a": "Okay, you have another question in ",
+    "b": ", which TigerFile Test do you want to know more about?"
+  },
+  "survey": {
+    "yes_no": [["Yes", 1], ["No", 0]],
+    "status": "Are you a student or a Lab TA?",
+    "status_response": [["Student", 0], ["Lab TA",1]],
+    "s_understand": "Did the chatbot help you understand the TigerFile test you asked about?",
+    "s_debug": "Did the chatbot give you a place to start debugging?",
+    "s_oh_ta_1": "Before using the chatbot, would you have taken this question to office hours or LabTA for help?",
+    "s_oh_ta_2": "Are you still going to go to office hours or LabTA, after having used the chatbot?",
+    "s_ans_feed": "Do you have feedback about the answers the chatbot gave you? If you do, please type in the text area below, otherwise click 'no'.",
+    "s_bot_feed": "Do you have any general feedback about the chatbot? If you do, please type in the text area below, otherwise click 'no'.",
+    "s_thanks": "I appreciate your feedback. Thank you for participating in my Independent Work. Good luck with your assignment!",
+    "ta_stu": "Did you help one or more students in this session?",
+    "ta_stu_response": [["One", 1],["Multiple", 1], ["None, just looking", 2]],
+    "ta_stu_help": "Did the students find the chatbot helpful?",
+    "ta_help": "Did you find the chatbot helpful?",
+    "ta_feed": "Any written feedback you want to share? If you do, please type in the text area below, otherwise click 'no'.",
+    "ta_thanks": "Thank you for participating in my Independent Work, I appreciate your feedback!"
+  },
   "about": "I am the Lab TA Chatbot! I was created by Selena Shaw '22 for her senior independent work!"
 }
