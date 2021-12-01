@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  height: calc(100% - 175px);
+  height: calc(100% - 155px);
 }
 
 /* From w3schools, to hide scrollbar but keep functionality */
@@ -51,17 +51,20 @@
 }
 
 .textfield {
-  height: 100px;
+  height: 80px;
   width: 100%;
 }
 
 .text-box {
-  border-radius: 5px 5px 0px 0px;
+  /* border-radius: 5px 5px 0px 0px; */
   border: solid 1.5px #36c9c6;
   border-bottom: 0px;
+  border-left: 0px;
+  border-right:0px;
   padding: 10px;
   height: calc(100% - 21.5px);
-  width: calc(100% - 23px);
+  width: calc(100% - 20px);
   resize:none;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }

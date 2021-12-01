@@ -16,9 +16,9 @@ export class message extends Component {
         <div className='button' onClick={()=>{
           if(!this.state.clicked) {
             this.setState({clicked : true});
-            buttonClicked(button, this.props.prompt);
-          }}} key={button}>
-          {button}
+            buttonClicked(button[0], button[1], this.props.prompt);
+          }}} key={button[0]}>
+          {button[0]}
         </div>
       )
       

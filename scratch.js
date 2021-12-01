@@ -1,3 +1,47 @@
+/* Old responses.err_info
+
+    "Great! We will quickly run through the formatting for both compilation and runtime error messages, to start, we will look at a compilation error",
+    "file_name.java:3: error: ';' expected\nString hello = \"Hello World\"\n                                ^\n1 error",
+    "This error occured when the .java file 'file_name' was compiled. The error message tells us that the error happened on line 3 and that a semi-colon was missing.",
+    "In order to help with your error, I need the first line of the error message. So for this example, you would copy the line \"file_name.java:3: error: ';' expected\" and paste it in my text field!",
+    "Now that we have covered compilation errors, let's look at a runtime example!",
+    "Our code snippet in this example is as follows:\n3: int[] arr = new int[2];\n4: arr[2] = 0;",
+    "This code compiles, but when we try to run it, we get the following exception",
+    "Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2\n    at file_name.main(file_name.java:4)",
+    "This error occurred because we made an array called 'arr' that can hold two integers (one at index 0 and one at index 1), however we are trying to store a value in an index that does not exist in the array we created, so Java throws a runtime exception.",
+    "The first line of the error tells us what the exception was, the lines that follow help you trace your code to see what line caused it (many times there will be more than one line of tracing), in this case the error occured in 'file_name' at line 4.",
+    "In order to help with your error, I again will need the first line of the error message. So for this example, you would copy the line \"Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2\" and paste it in my text field!",
+    "When I receive your error message, compilation or runtime, I provide some elaboration on the error message and some possible solutions.",
+    "Now that we have gone through all of that, let's look at your error message!"
+
+    When you are finished, I would greatly appreciate it if you stuck around and answered my survey questions!
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // print student button click as student message
 let key = "which_part_response"+this.state.loop_index;
 let newmessage = <Message message={button} bot={false} key={key}/>

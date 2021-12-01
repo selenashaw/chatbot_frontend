@@ -1,0 +1,36 @@
+{
+  "intro": "Hello! I am the Lab TA Chatbot, I am here to help you understand some of the reasons you might be receiving a Java error message! You will be able to ask me about several error messages, but we will go through them one at a time.",
+  "format": "Before we get started, would you like me to go over Java error message formatting and the format necessary for me to answer your questions? (Recommended for first time users)",
+  "err_info": [
+    "Great! We will quickly run through the formatting for both compilation and runtime error messages! First, we will look at a compilation error",
+    "file_name.java:3: error: ';' expected\nString hello = \"Hello World\"\n                                ^\n1 error",
+    "To help with your error, I need the first line of the error message. So for this example, you would copy and paste the following line into my text field",
+    "\"file_name.java:3: error: ';' expected\"",
+    "For a runtime example, let's suppose we get the following",
+    "Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2\n    at file_name.main(file_name.java:4)",
+    "To help with your error, I again will need the first line of the error message. So for this example, you would copy and paste the following line into my text field",
+    "\"Exception in thread \"main\" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2\"",
+    "When I receive your error message I will do my best to provide some elaboration on the error message and what might be going wrong.",
+    "Now that we have gone through all of that, what is the error message that you are receiving?"
+  ],
+  "which_err": "Alright, what error message are you receiving?",
+  "err_res": "Here is what I know about that error:",
+  "err_parse_res1":"Here is the error I found that matches the form of the one you gave me:",
+  "err_parse_res2":"And this is what I know about that error:",
+  "examine_res":"After you have taken a moment to review the tips about the error message I gave you. Did you find it helpful for understanding the error message or debugging your code? (Your response can help me improve my answers in the future!)",
+  "err_res_bad_temp":"I am sorry, I don't recognize the error you gave me. Please make sure the formatting is correct and send it to me again!",
+  "err_res_bad": "I am sorry, I don't recognize the error you gave me. Would you like to try again or would you like me to review the formatting that I use?",
+  "dont_have": "Hmm, it looks like I don't have that error message. I will keep note of this so that an answer can be added later! Would you like to ask about a different error message?",
+
+  "helpful_true": "Awesome, I am glad I was able to help! Are there any other error messages I can help you with?",
+  "helpful_false": "Oh no, I am sorry I wasn't able to help with that error message. Other resources you can use for help with error messages are Office Hours or Lab TAs. Is there a different error message I could help you with?",
+
+  "goodbye": "Thank you for participating in my independent work and testing out my Lab TA chatbot!",
+  "goodbye2":"Goodbye!",
+
+  "buttons": {
+    "yes_no": ["Yes", "No"],
+    "try_format": ["Try Again", "Review Format"],
+    "class": ["Cos126", "Cos226"]
+  }
+}
