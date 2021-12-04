@@ -30,14 +30,20 @@ export class message extends Component {
     return (
       // Color/alignment should be based on if bot and if person
       <div className={`message-container ${this.props.bot ? "message-bot" : "message-person"}`}>
-        <div className='message'>
-          {this.props.message}
-        </div>
-        {this.props.button ? 
-          <div className='button-container'>
-            {this.setButtons(this.props.button, this.props.buttonClicked)}
-          </div>
-          : null
+        {this.props.image ? 
+          <img src={this.props.message} className='image' alt="error message"/>
+        :
+          <>
+            <div className='message'>
+              {this.props.message}
+            </div>
+            {this.props.button ? 
+              <div className='button-container'>
+                {this.setButtons(this.props.button, this.props.buttonClicked)}
+              </div>
+              : null
+            }
+          </>
         }
       </div>
     )

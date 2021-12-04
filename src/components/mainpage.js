@@ -3,6 +3,8 @@ import './mainpage.css';
 import Message from './message';
 import responses from '../responses.json';
 import axios from 'axios';
+import helloworld_image from '../helloworld.PNG';
+import array_image from '../array.PNG';
 
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
@@ -44,14 +46,12 @@ export class mainpage extends Component {
       axios.post('https://labtabackendcb.herokuapp.com/log/', body)
       .then((response) => {
         let logid = response.data._id;
-        console.log(this.state.missing);
-        console.log(this.state.missing!==[]);
         if(this.state.missing!==[]) {
           for(const str of this.state.missing){
             let mbody={err_msg:str, logId:logid};
             axios.post('https://labtabackendcb.herokuapp.com/missing/', mbody)
             .then((res)=>{
-              console.log(res);
+              console.log("Thanks again!");
             });
           }
         }
@@ -180,7 +180,16 @@ export class mainpage extends Component {
         let err_info = responses.err_info;
         for (let i = 0; i<err_info.length - 1; i++) {
           let key = "err_info_"+i;
-          let newmessage = <Message message={err_info[i]} bot={true} key={key}/>;
+          let newmessage;
+          if (i === 1) {
+            newmessage = <Message message={helloworld_image} bot={true} key={key} image={true}/>;
+          }
+          else if (i===5) {
+            newmessage = <Message message={array_image} bot={true} key={key} image={true}/>;
+          }
+          else {
+            newmessage = <Message message={err_info[i]} bot={true} key={key}/>;
+          }
           this.updateMessages(newmessage);
           await delay(3000);
         } 

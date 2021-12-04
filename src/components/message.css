@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .message-container{
-  max-width: 55%;
+  max-width: 60%;
   margin: 5px 10px;
   border-radius: 10px;
   padding: 10px;
@@ -20,9 +20,13 @@
 }
 
 .message{
-  font-size: 16px;
+  font-size: 14px;
   font-family:'Roboto', sans-serif;
   white-space: pre-wrap;
+}
+
+.image{
+  width:100%;
 }
 
 .button-container{
@@ -38,7 +42,7 @@
   border-radius: 10px;
   border: solid 1px #086788;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-family:'Roboto', sans-serif;
 }
 
