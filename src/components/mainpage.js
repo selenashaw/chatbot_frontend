@@ -101,22 +101,22 @@ export class mainpage extends Component {
             let text_bot_key = "bot_res"+this.state.loop_index;
             message = <Message message={responses.err_parse_res1} bot={true} key={text_bot_key} />
             this.updateMessages(message);
-            await delay(1000);
+            await delay(2000);
 
             text_bot_key = "bot_category"+this.state.loop_index;
             message = <Message message={checkingparsed[0].category} bot={true} key={text_bot_key} />
             this.updateMessages(message);
-            await delay(2000);
+            await delay(2500);
 
             text_bot_key="bot_res2"+this.state.loop_index;
             message=<Message message={responses.err_parse_res2} bot={true} key={text_bot_key}/>
             this.updateMessages(message);
-            await delay(1000);
+            await delay(2000);
 
             text_bot_key = "bot_ans"+this.state.loop_index;
             message = <Message message={checkingparsed[0].response} bot={true} key={text_bot_key} />
             this.updateMessages(message);
-            await delay(5000);
+            await delay(9000);
 
             text_bot_key = "helpful_q"+this.state.loop_index;
             message = <Message message={responses.examine_res} bot={true} key={text_bot_key} prompt="helpful" button={responses.buttons.yes_no} buttonClicked={this.buttonClicked}/>
@@ -148,12 +148,12 @@ export class mainpage extends Component {
           let text_bot_key = "bot_res"+this.state.loop_index;
           message = <Message message={responses.err_res} bot={true} key={text_bot_key} />
           this.updateMessages(message);
-          await delay(1000);
+          await delay(2000);
           text_bot_key = "bot_ans"+this.state.loop_index;
 
           message = <Message message={help[0].response} bot={true} key={text_bot_key} />
           this.updateMessages(message);
-          await delay(5000);
+          await delay(9000);
           text_bot_key = "helpful_q"+this.state.loop_index;
           message = <Message message={responses.examine_res} bot={true} key={text_bot_key} prompt="helpful" button={responses.buttons.yes_no} buttonClicked={this.buttonClicked}/>
           this.updateMessages(message);
@@ -191,7 +191,7 @@ export class mainpage extends Component {
             newmessage = <Message message={err_info[i]} bot={true} key={key}/>;
           }
           this.updateMessages(newmessage);
-          await delay(3000);
+          await delay(4000);
         } 
         let key = "which_err"+this.state.loop_index;
         let newmessage = <Message message={err_info[err_info.length-1]} bot={true} key={key} prompt={key} />;
